@@ -16,28 +16,31 @@ public class SubtitleRenderer extends Gui {
             return;
         }
 
-        final int width = this.getLargestString(fontRenderer, data) + 8;
-        final int height = 10 * data.length;
-
         final ScaledResolution resolution = ScaledResolution.instance;
+        final int widgetWidth = this.getLargestString(fontRenderer, data) + 8;
+        final int widgetHeight = 10 * data.length;
+        final int offsetX = resolution.getScaledWidth() - widgetWidth;
+        final int offsetY = resolution.getScaledHeight() - widgetHeight - 12;
 
-        final int offsetX = resolution.getScaledWidth() - width;
-        final int offsetY = resolution.getScaledHeight() - height - 12;
+        //draw big rect
+        drawRect(
+                offsetX, offsetY - 1,
+                offsetX + widgetWidth, offsetY + widgetHeight,
+                -2147483648
+        );
 
-        //draw rect
-        drawRect(offsetX, offsetY - 1, offsetX + width, offsetY + height, -2147483648);
-
+        //draw each line
         for (int i = 0; i < data.length; i++) {
             final int startY = offsetY + (i * 10);
 
             //draw signal chars
             final char signal = data[i].directionChar();
             fontRenderer.drawStringWithShadow(String.valueOf(signal), offsetX, startY, 0xFFFFFFFF);
-            fontRenderer.drawStringWithShadow(String.valueOf(signal), offsetX + width - CatchingSubtitles.getDirectionCharWidth(signal), startY, 0xFFFFFFFF);
+            fontRenderer.drawStringWithShadow(String.valueOf(signal), offsetX + widgetWidth - CatchingSubtitles.getDirectionCharWidth(signal), startY, 0xFFFFFFFF);
 
             //draw main string
             final String show = data[i].displayString();
-            fontRenderer.drawStringWithShadow(show, offsetX + (width / 2) - fontRenderer.getStringWidth(show) / 2, startY, 0xFFFFFFFF);
+            fontRenderer.drawStringWithShadow(show, offsetX + (widgetWidth / 2) - fontRenderer.getStringWidth(show) / 2, startY, 0xFFFFFFFF);
         }
     }
 

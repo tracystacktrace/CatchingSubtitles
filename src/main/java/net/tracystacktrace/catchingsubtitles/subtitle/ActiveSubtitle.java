@@ -14,7 +14,7 @@ public class ActiveSubtitle extends Subtitle {
     }
 
     public boolean isExpired(long current) {
-        return current - this.captureTime > 5000;
+        return current - this.captureTime > (CatchingSubtitles.CONFIG.subtitlesDuration * 1000L);
     }
 
     public String getDisplayString() {

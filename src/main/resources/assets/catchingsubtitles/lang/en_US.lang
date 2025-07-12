@@ -3,3 +3,4 @@ config.catchingsubtitles.showSubtitles.name=Show Subtitles
 config.catchingsubtitles.showDistance.name=Show Distance
 config.catchingsubtitles.maxSoundDistance.name=Max Distance (blocks)
 config.catchingsubtitles.maxUniqueSubtitles.name=Max Unique Subtitles
+config.catchingsubtitles.subtitlesDuration.name=Subtitles Duration (sec)

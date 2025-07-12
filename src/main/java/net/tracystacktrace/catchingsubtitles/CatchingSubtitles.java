@@ -22,7 +22,7 @@ public class CatchingSubtitles extends Mod {
         return switch (c) {
             case '↑', '↓' -> 6;
             case '←', '→', '⚠', '⏼' -> 8;
-            default -> 4;
+            default -> 4; //space
         };
     }
 
@@ -34,7 +34,7 @@ public class CatchingSubtitles extends Mod {
             case SoundSourcePosition.BEHIND -> '↓';
             case SoundSourcePosition.LEFT -> '←';
             case SoundSourcePosition.RIGHT -> '→';
-            default -> ' ';
+            default -> ' '; //space
         };
     }
 

@@ -24,4 +24,11 @@ public final class CatchingSubtitlesConfig {
     )
     public int maxUniqueSubtitles = 12;
 
+    @ConfigEntry(
+            configComment = "Subtitles Duration (sec)",
+            lowerBounds = 1,
+            upperBounds = 10
+    )
+    public int subtitlesDuration = 5;
+
 }
