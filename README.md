@@ -2,15 +2,16 @@
 
 > [!WARNING]  
 > The future of this project is pretty unknown. If the subtitles end up being added to ReIndev directly, there's no need to have a mod version, lol.
+> 
 > This mod is heavily WIP (Work In Progress) and lacks lots of features! However, the base part of the mod is finished and can be tested by now!
 
-Catching Subtitles is a FoxLoader (Reindev) modification that aims at providing subtitles functionality in the game.
-In other words, it displays text for sounds during gameplay, which can be helpful for people with hearing impairments or don't play with sound for some reason.
+_Catching Subtitles_ is a FoxLoader (Reindev) modification that aims at providing subtitles functionality in the game.
+In other words, it displays text for sounds during gameplay, which can be helpful for people with hearing impairments or who don't play with sounds on for some reason.
 
 ### Features:
 - **Subtitles:** Yeah, the main part of the mod.
-- **Direction display:** shows the direction of the sound source.
-- **Distance to the sound (configurable):** shows the distance to the sound source (in blocks).
+- **Direction display:** Shows the direction of the sound source.
+- **Distance to the sound (configurable):** Shows the distance to the sound source (in blocks).
 
 ![Screenshot 1](https://github.com/tracystacktrace/CatchingSubtitles/raw/main/docs/screenshot_1.png)
 
