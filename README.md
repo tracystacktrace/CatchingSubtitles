@@ -1,5 +1,6 @@
 # Catching Subtitles
 
+> [!WARNING]  
 > This mod is heavily WIP (Work In Progress) and lacks lots of features! However, the base part of the mod is finished and can be tested by now!
 
 Catching Subtitles is a FoxLoader (Reindev) modification that aims at providing subtitles functionality in the game.
