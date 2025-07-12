@@ -10,9 +10,8 @@ In other words, it displays text for sounds during gameplay, which can be helpfu
 - **Subtitles:** Yeah, the main part of the mod.
 - **Direction display:** shows the direction of the sound source.
 - **Distance to the sound (configurable):** shows the distance to the sound source (in blocks).
-- 
 
-![Screenshot 1](https://github.com/tracystacktrace/CatchingSubtitles/raw/main/docs/screenshot.png)
+![Screenshot 1](https://github.com/tracystacktrace/CatchingSubtitles/raw/main/docs/screenshot_1.png)
 
 ## Installation
 
