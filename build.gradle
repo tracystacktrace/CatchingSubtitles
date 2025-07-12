@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://cdn.fox2code.com/maven' }
+    }
+    dependencies {
+        classpath('com.fox2code.FoxLoader:dev:2.0-alpha34')
+    }
+}
+
+apply plugin: 'foxloader.dev'
+
+group = 'net.tracystacktrace'
+version = '1.0'
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    from "LICENSE"
+}
+
+foxloader {
+    modId = "catchingsubtitles"
+    modName = "Catching Subtitles"
+    modIcon = "assets/catchingsubtitles/icon.png"
+    modVersion = project.version
+    modAuthors = "tracystacktrace"
+    modWebsite = "https://github.com/tracystacktrace/CatchingSubtitles"
+    modMain = "net.tracystacktrace.catchingsubtitles.CatchingSubtitles"
+    modDesc("§eIn-Game §bdirection §ebased sound subtitles! See what you §bhear§e...")
+}
