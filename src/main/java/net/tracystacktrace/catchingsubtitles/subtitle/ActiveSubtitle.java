@@ -18,7 +18,7 @@ public class ActiveSubtitle extends Subtitle {
     }
 
     public String getDisplayString() {
-        return CatchingSubtitles.CONFIG.showDistance ? String.format("§e%s §b%.1f§r", CatchingSubtitles.getSourceName(this.source, this.identifier), this.getDistance()) : String.format("§e%s", this.identifier);
+        return CatchingSubtitles.CONFIG.showDistance ? String.format("§e%s §b%.1f§r", SourceIdentifier.getSourceName(this.source, this.identifier), this.getDistance()) : String.format("§e%s", this.identifier);
     }
 
     public byte getDirection() {
