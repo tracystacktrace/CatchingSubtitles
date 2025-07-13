@@ -1,8 +1,7 @@
 package net.tracystacktrace.catchingsubtitles.mixins.source.client;
 
 import net.minecraft.client.player.PlayerControllerSP;
-import net.tracystacktrace.catchingsubtitles.CatchingSubtitles;
-import net.tracystacktrace.catchingsubtitles.subtitle.SubtitleSystem;
+import net.tracystacktrace.catchingsubtitles.subtitle.SourceIdentifier;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -15,6 +14,6 @@ public class MixinPlayerControllerSP {
             target = "Lnet/minecraft/client/sound/SoundManager;playSound(Ljava/lang/String;FFFFF)V"
     ))
     private void catchingsubtitles$injectSourceData4(int x, int y, int z, int facing, CallbackInfo ci) {
-        CatchingSubtitles.SYSTEM.setSource(SubtitleSystem.SOURCE_BLOCK_BREAKING);
+        SourceIdentifier.setSource(SourceIdentifier.SOURCE_BLOCK_BREAKING);
     }
 }

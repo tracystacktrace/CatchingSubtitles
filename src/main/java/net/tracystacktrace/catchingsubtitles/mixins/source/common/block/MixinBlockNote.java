@@ -2,8 +2,7 @@ package net.tracystacktrace.catchingsubtitles.mixins.source.common.block;
 
 import net.minecraft.common.block.children.BlockNote;
 import net.minecraft.common.world.World;
-import net.tracystacktrace.catchingsubtitles.CatchingSubtitles;
-import net.tracystacktrace.catchingsubtitles.subtitle.SubtitleSystem;
+import net.tracystacktrace.catchingsubtitles.subtitle.SourceIdentifier;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -15,6 +14,6 @@ public class MixinBlockNote {
             value = "INVOKE",
             target = "Lnet/minecraft/common/world/World;playSoundEffect(DDDLjava/lang/String;FF)V"))
     private void catchingsubtitles$specifySource(World world, int x, int y, int z, int noteType, int notePitch, CallbackInfo ci) {
-        CatchingSubtitles.SYSTEM.setSource(SubtitleSystem.SOURCE_ACTIVATE_NOTE);
+        SourceIdentifier.setSource(SourceIdentifier.SOURCE_ACTIVATE_NOTE);
     }
 }
