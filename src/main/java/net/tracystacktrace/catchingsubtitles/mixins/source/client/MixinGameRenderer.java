@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MixinGameRenderer {
     @Inject(method = "addRainParticles", at = @At(value = "INVOKE", target = "Lnet/minecraft/common/world/World;playSoundEffect(DDDLjava/lang/String;FF)V"))
     private void catchingsubtitles$injectSourceData6(CallbackInfo ci) {
-        SourceIdentifier.setSource(SourceIdentifier.SOURCE_RAINING);
+        SourceIdentifier.setSource(SourceIdentifier.SOURCE_AMBIENT_RAIN);
     }
 
 }

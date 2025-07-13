@@ -25,12 +25,12 @@ public class CatchingSubtitles extends Mod {
             case SourceIdentifier.SOURCE_DEFAULT -> String.format("Undefined: %s", identifier);
             case SourceIdentifier.SOURCE_INTERFACE -> "Button Click";
             case SourceIdentifier.SOURCE_COLLECT_ITEM -> "Item Collected";
-            case SourceIdentifier.SOURCE_PORTAL_INTERACTION ->
+            case SourceIdentifier.SOURCE_ACTIVATE_PORTAL ->
                     identifier.equals("portal.trigger") ? "Portal Triggered" : "Portal Activation";
             case SourceIdentifier.SOURCE_CLOUD_BOOTS -> "Cloud Boots Dash";
             case SourceIdentifier.SOURCE_FIRE_EXTINGUISH -> "Fire Extinguished";
             case SourceIdentifier.SOURCE_BLOCK_BREAKING -> String.format("Block breaking: %s", identifier);
-            case SourceIdentifier.SOURCE_RAINING -> "Rain Sounds";
+            case SourceIdentifier.SOURCE_AMBIENT_RAIN -> "Rain Sounds";
             case SourceIdentifier.SOURCE_MIDDLE_CLICK -> "Middle Mouse Click";
             case SourceIdentifier.SOURCE_AMBIENT_BLASTFURNACE -> "Blast Furnace Ambient";
             case SourceIdentifier.SOURCE_ACTIVATE_BUTTON -> "Button Clicked";

@@ -15,7 +15,7 @@ public class MixinEntityPlayerSP {
             target = "Lnet/minecraft/client/sound/SoundManager;playSoundFX(Ljava/lang/String;FF)V"
     ))
     private void catchingsubtitles$injectSourceData1(CallbackInfo ci) {
-        SourceIdentifier.setSource(SourceIdentifier.SOURCE_PORTAL_INTERACTION);
+        SourceIdentifier.setSource(SourceIdentifier.SOURCE_ACTIVATE_PORTAL);
     }
 
     @Inject(method = "tickCloudBoots", at = @At(

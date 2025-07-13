@@ -3,7 +3,6 @@ package net.tracystacktrace.catchingsubtitles.client;
 import com.fox2code.foxloader.config.ConfigEntry;
 
 public final class CatchingSubtitlesConfig {
-
     @ConfigEntry(configComment = "Show subtitles")
     public boolean showSubtitles = true;
 
@@ -30,5 +29,4 @@ public final class CatchingSubtitlesConfig {
             upperBounds = 10
     )
     public int subtitlesDuration = 5;
-
 }
