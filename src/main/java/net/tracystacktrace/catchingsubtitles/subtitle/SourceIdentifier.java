@@ -79,6 +79,13 @@ public final class SourceIdentifier {
     public static final byte SOURCE_WOLF_HURT = -76;
     public static final byte SOURCE_WOLF_DEATH = -75;
 
+    public static final byte SOURCE_ENTITY_FALL = -74;
+    public static final byte SOURCE_ENTITY_BURN = -73;
+    public static final byte SOURCE_ENTITY_WATER_SPLASH = -72;
+    public static final byte SOURCE_ENTITY_SWIM = -71;
+    public static final byte SOURCE_ENTITY_EXTINGUISHED = -70;
+    public static final byte SOURCE_ENTITY_WALK = -69;
+
     public static void setSource(byte code) {
         CatchingSubtitles.SYSTEM.setSource(code);
     }
@@ -146,6 +153,12 @@ public final class SourceIdentifier {
             case SOURCE_WOLF_HURT -> "Wolf Hurt";
             case SOURCE_WOLF_DEATH -> "Wolf Died";
 
+            case SOURCE_ENTITY_FALL -> "Entity Fell";
+            case SOURCE_ENTITY_BURN -> "Entity Burns";
+            case SOURCE_ENTITY_WATER_SPLASH -> "Water Splashes";
+            case SOURCE_ENTITY_SWIM -> "Entity Swimming";
+            case SOURCE_ENTITY_EXTINGUISHED -> "Entity Extinguished (from fire)";
+            case SOURCE_ENTITY_WALK -> String .format("Entity Walks (on %s)", identifier);
 
             default -> identifier;
         };
