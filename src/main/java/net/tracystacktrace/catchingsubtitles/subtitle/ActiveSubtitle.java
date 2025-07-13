@@ -9,7 +9,7 @@ public class ActiveSubtitle extends Subtitle {
     public final long captureTime;
 
     public ActiveSubtitle(@NotNull Subtitle subtitle, long captureTime) {
-        super(subtitle.identifier, subtitle.x, subtitle.y, subtitle.z);
+        super(subtitle.identifier, subtitle.x, subtitle.y, subtitle.z, subtitle.source);
         this.captureTime = captureTime;
     }
 
@@ -18,7 +18,7 @@ public class ActiveSubtitle extends Subtitle {
     }
 
     public String getDisplayString() {
-        return CatchingSubtitles.CONFIG.showDistance ? String.format("§e%s §b%.1f§r", this.identifier, this.getDistance()) : String.format("§e%s", this.identifier);
+        return CatchingSubtitles.CONFIG.showDistance ? String.format("§e%s §b%.1f§r", CatchingSubtitles.getSourceName(this.source, this.identifier), this.getDistance()) : String.format("§e%s", this.identifier);
     }
 
     public byte getDirection() {
