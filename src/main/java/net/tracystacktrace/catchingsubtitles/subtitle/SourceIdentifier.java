@@ -11,6 +11,7 @@ public final class SourceIdentifier {
     public static final byte SOURCE_CLOUD_BOOTS = -124;
     public static final byte SOURCE_MIDDLE_CLICK = -120;
 
+
     /* ----- Ambient Sources ----- */
     public static final byte SOURCE_AMBIENT_RAIN = -121;
     public static final byte SOURCE_AMBIENT_BLASTFURNACE = -119;
@@ -23,9 +24,11 @@ public final class SourceIdentifier {
     public static final byte SOURCE_AMBIENT_PORTAL = -106;
     public static final byte SOURCE_AMBIENT_POTION_FIRE = -105;
 
+
     /* ----- Restoring (Unclick) Sources ----- */
     public static final byte SOURCE_RESTORE_PLATE = -103;
     public static final byte SOURCE_RESTORE_BUTTON = -117;
+
 
     /* ----- Activation Sources ----- */
     public static final byte SOURCE_ACTIVATE_PORTAL = -125;
@@ -38,6 +41,7 @@ public final class SourceIdentifier {
     public static final byte SOURCE_ACTIVATE_PLATE = -104;
     public static final byte SOURCE_ACTIVATE_TRAPDOOR = -100;
 
+
     /* ----- Unspecified Block Sources ----- */
     public static final byte SOURCE_INTERACT_SLIME = -101;
     public static final byte SOURCE_FIRE_EXTINGUISH = -123;
@@ -45,13 +49,35 @@ public final class SourceIdentifier {
     public static final byte SOURCE_FLOW_WATER = -99;
     public static final byte SOURCE_FILL_CAULDRON = -98;
 
+
     /* ----- Entity Sources ----- */
+    public static final byte SOURCE_BLAZE_IDLE = -92;
+
     public static final byte SOURCE_CHICKEN_EGGDROP = -97;
+    public static final byte SOURCE_CHICKEN_IDLE = -91;
+    public static final byte SOURCE_CHICKEN_HURT = -90;
+    public static final byte SOURCE_CHICKEN_DEATH = -89;
+
     public static final byte SOURCE_FOX_SHAKE = -96;
     public static final byte SOURCE_FOX_CONSUMES = -95;
-    public static final byte SOURCE_WASP_BUZZ = -94;
-    public static final byte SOURCE_WOLF_SHAKE = -93;
+    public static final byte SOURCE_FOX_IDLE = -88;
+    public static final byte SOURCE_FOX_HURT = -87;
+    public static final byte SOURCE_FOX_DEATH = -86;
+    public static final byte SOURCE_FOX_SLEEP = -85;
+    public static final byte SOURCE_FOX_AGGRESSIVE = -84;
+    public static final byte SOURCE_FOX_WHINE = -83;
 
+    public static final byte SOURCE_WASP_IDLE = -94;
+    public static final byte SOURCE_WASP_HURT = -82;
+    public static final byte SOURCE_WASP_DEATH = -81;
+
+    public static final byte SOURCE_WOLF_SHAKE = -93;
+    public static final byte SOURCE_WOLF_AGGRESSIVE = -80;
+    public static final byte SOURCE_WOLF_BARK = -79;
+    public static final byte SOURCE_WOLF_WHINE = -78;
+    public static final byte SOURCE_WOLF_PANTING = -77;
+    public static final byte SOURCE_WOLF_HURT = -76;
+    public static final byte SOURCE_WOLF_DEATH = -75;
 
     public static void setSource(byte code) {
         CatchingSubtitles.SYSTEM.setSource(code);
@@ -92,11 +118,34 @@ public final class SourceIdentifier {
             case SOURCE_ACTIVATE_TRAPDOOR -> "Trapdoor Activated";
             case SOURCE_FLOW_WATER -> "Water Flowing";
             case SOURCE_FILL_CAULDRON -> "Cauldron Filled";
+            case SOURCE_BLAZE_IDLE -> "Blaze Flickers";
+
             case SOURCE_CHICKEN_EGGDROP -> "Egg Ejected";
+            case SOURCE_CHICKEN_IDLE -> "Chicken Idle Sounds";
+            case SOURCE_CHICKEN_HURT -> "Chicken Hurt";
+            case SOURCE_CHICKEN_DEATH -> "Chicken Died";
+
             case SOURCE_FOX_SHAKE -> "Fox Shakes";
             case SOURCE_FOX_CONSUMES -> "Fox Eats";
-            case SOURCE_WASP_BUZZ -> "Wasp Buzzes";
+            case SOURCE_FOX_IDLE -> "Fox Idle Sounds";
+            case SOURCE_FOX_HURT -> "Fox Hurt";
+            case SOURCE_FOX_DEATH -> "Fox Died";
+            case SOURCE_FOX_SLEEP -> "Fox Sleeping";
+            case SOURCE_FOX_AGGRESSIVE -> "Fox Roaring";
+            case SOURCE_FOX_WHINE -> "Fox Whines";
+
+            case SOURCE_WASP_IDLE -> "Wasp Buzzes";
+            case SOURCE_WASP_HURT -> "Wasp Hurt";
+            case SOURCE_WASP_DEATH -> "Wasp Died";
+
             case SOURCE_WOLF_SHAKE -> "Wolf Shakes";
+            case SOURCE_WOLF_AGGRESSIVE -> "Wolf Growls";
+            case SOURCE_WOLF_BARK -> "Wolf Barks";
+            case SOURCE_WOLF_WHINE -> "Wolf Whines";
+            case SOURCE_WOLF_PANTING -> "Wolf Panting";
+            case SOURCE_WOLF_HURT -> "Wolf Hurt";
+            case SOURCE_WOLF_DEATH -> "Wolf Died";
+
 
             default -> identifier;
         };

@@ -33,6 +33,7 @@
     "source.common.block.MixinBlockTrapdoor",
     "source.common.block.MixinBlockWater",
     "source.common.tile.MixinTileEntityCauldron",
+    "source.entity.MixinEntityBlaze",
     "source.entity.MixinEntityChicken",
     "source.entity.MixinEntityFox",
     "source.entity.MixinEntityWasp",
