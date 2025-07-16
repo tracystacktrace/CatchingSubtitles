@@ -51,7 +51,6 @@ public final class SourceIdentifier {
 
 
     /* ----- Entity Sources ----- */
-    public static final byte SOURCE_BLAZE_IDLE = -92;
 
     public static final byte SOURCE_CHICKEN_EGGDROP = -97;
     public static final byte SOURCE_CHICKEN_IDLE = -91;
@@ -85,6 +84,30 @@ public final class SourceIdentifier {
     public static final byte SOURCE_ENTITY_SWIM = -71;
     public static final byte SOURCE_ENTITY_EXTINGUISHED = -70;
     public static final byte SOURCE_ENTITY_WALK = -69;
+
+    public static final byte SOURCE_BLAZE_IDLE = -92;
+    public static final byte SOURCE_BLAZE_HURT = -68;
+    public static final byte SOURCE_BLAZE_DEATH = -67;
+
+    public static final byte SOURCE_GHAST_CHARGE = -66;
+    public static final byte SOURCE_GHAST_FIREBALL = -65;
+    public static final byte SOURCE_GHAST_IDLE = -64;
+    public static final byte SOURCE_GHAST_HURT = -63;
+    public static final byte SOURCE_GHAST_DEATH = -62;
+
+    public static final byte SOURCE_SKELETON_IDLE = -61;
+    public static final byte SOURCE_SKELETON_HURT = -60;
+    public static final byte SOURCE_SKELETON_DEATH = -59;
+    public static final byte SOURCE_SKELETON_SHOOTS = -58;
+
+    public static final byte SOURCE_SLIME_JUMP = -57;
+    public static final byte SOURCE_SLIME_HURT = -56;
+    public static final byte SOURCE_SLIME_DEATH = -55;
+    public static final byte SOURCE_SLIME_ATTACK = -54;
+
+    public static final byte SOURCE_STROLDIAN_IDLE = -53;
+    public static final byte SOURCE_STROLDIAN_HURT = -52;
+    public static final byte SOURCE_STROLDIAN_DEATH = -51;
 
     public static void setSource(byte code) {
         CatchingSubtitles.SYSTEM.setSource(code);
@@ -159,6 +182,26 @@ public final class SourceIdentifier {
             case SOURCE_ENTITY_SWIM -> "Entity Swimming";
             case SOURCE_ENTITY_EXTINGUISHED -> "Entity Extinguished (from fire)";
             case SOURCE_ENTITY_WALK -> String .format("Entity Walks (on %s)", identifier);
+
+            case SOURCE_GHAST_CHARGE -> "Ghast Charges";
+            case SOURCE_GHAST_FIREBALL -> "Ghast Shoots";
+            case SOURCE_GHAST_IDLE -> "Idle Ghast Sounds";
+            case SOURCE_GHAST_HURT -> "Ghast Hurt";
+            case SOURCE_GHAST_DEATH -> "Ghast Died";
+
+            case SOURCE_SKELETON_IDLE -> "Skeleton Idle Sounds";
+            case SOURCE_SKELETON_HURT -> "Skeleton Hurt";
+            case SOURCE_SKELETON_DEATH -> "Skeleton Died";
+            case SOURCE_SKELETON_SHOOTS -> "Skeleton Shoots";
+
+            case SOURCE_SLIME_JUMP -> "Slime Jumps";
+            case SOURCE_SLIME_HURT -> "Slime Hurt";
+            case SOURCE_SLIME_DEATH -> "Slime Died";
+            case SOURCE_SLIME_ATTACK -> "Slime Attacks";
+
+            case SOURCE_STROLDIAN_IDLE -> "Stroldian Idle";
+            case SOURCE_STROLDIAN_HURT -> "Stroldian Hurt";
+            case SOURCE_STROLDIAN_DEATH -> "Stroldian Died";
 
             default -> identifier;
         };

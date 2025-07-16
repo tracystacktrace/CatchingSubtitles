@@ -37,7 +37,11 @@
     "source.entity.MixinEntityBlaze",
     "source.entity.MixinEntityChicken",
     "source.entity.MixinEntityFox",
+    "source.entity.MixinEntityGhast",
     "source.entity.MixinEntityLiving",
+    "source.entity.MixinEntitySkeleton",
+    "source.entity.MixinEntitySlime",
+    "source.entity.MixinEntityStroldian",
     "source.entity.MixinEntityWasp",
     "source.entity.MixinEntityWolf"
   ]

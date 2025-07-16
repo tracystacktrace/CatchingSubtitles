@@ -20,7 +20,7 @@ public class SubtitleRenderer extends Gui {
         final int widgetWidth = this.getLargestString(fontRenderer, data) + 8;
         final int widgetHeight = 10 * data.length;
         final int offsetX = resolution.getScaledWidth() - widgetWidth;
-        final int offsetY = resolution.getScaledHeight() - widgetHeight - 12;
+        final int offsetY = resolution.getScaledHeight() - widgetHeight - 25;
 
         //draw big rect
         drawRect(
